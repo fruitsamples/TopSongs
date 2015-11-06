@@ -19,9 +19,13 @@ The problem with this pattern is that fetches are, relatively speaking, expensiv
 The easiest way to avoid the memory problem for large or potentially large data sets is to use a simple caching mechanism. This builds upon the lookup table by setting a fixed size to the table. If an item is in the table (a cache "hit"), it is simply returned. If an item is not in the table (a cache "miss") then a fetch is performed to retrieve that item and it is place in the table. When the table becomes full, an item must be evicted in order for the current requested item to be cached. How you determine which item is evicted is known as the "replacement policy". There are many different algorithms for this purpose, the best known being "Least Recently Used" or LRU. That is the algorithm implemented in the cache for this example.
 
 ===========================================================================
-SYSTEM REQUIREMENTS
+BUILD REQUIREMENTS
 
-iPhone OS 3.0
+iOS SDK 4.0
+
+RUNTIME REQUIREMENTS
+
+iOS 4.0
 
 ===========================================================================
 PACKAGING LIST
@@ -50,7 +54,11 @@ Managed object subclass for Category entity.
 ===========================================================================
 CHANGES FROM PREVIOUS VERSIONS
 
+1.2 Upgraded project to build with the iOS 4 SDK.
+
+1.1 Expanded ReadMe and added localization for SongsViewController.
+
 1.0 Initial version published.
 
 ===========================================================================
-Copyright (C) 2009 Apple Inc. All rights reserved.
+Copyright (C) 2010 Apple Inc. All rights reserved.

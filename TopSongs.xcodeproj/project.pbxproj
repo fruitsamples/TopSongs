@@ -25,6 +25,11 @@
 		3097D7390E394B0600159D5D /* SongDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3097D7380E394B0600159D5D /* SongDetailsController.m */; };
 		30B696B00F852DAE009F5B22 /* CategoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B696AF0F852DAE009F5B22 /* CategoryCache.m */; };
 		30F20C520EC3618100F74FAC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30F20C500EC3618100F74FAC /* Localizable.strings */; };
+		7E37058011CAC2FE00F5DB11 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E37057B11CAC2FE00F5DB11 /* Icon-Small.png */; };
+		7E37058111CAC2FE00F5DB11 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E37057C11CAC2FE00F5DB11 /* Icon-Small@2x.png */; };
+		7E37058211CAC2FE00F5DB11 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E37057D11CAC2FE00F5DB11 /* Icon.png */; };
+		7E37058311CAC2FE00F5DB11 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E37057E11CAC2FE00F5DB11 /* Icon@2x.png */; };
+		7E37058411CAC2FE00F5DB11 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E37057F11CAC2FE00F5DB11 /* iTunesArtwork.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +61,11 @@
 		30B696AE0F852DAE009F5B22 /* CategoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CategoryCache.h; path = Application/CategoryCache.h; sourceTree = "<group>"; };
 		30B696AF0F852DAE009F5B22 /* CategoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CategoryCache.m; path = Application/CategoryCache.m; sourceTree = "<group>"; };
 		30F20C510EC3618100F74FAC /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7E37057B11CAC2FE00F5DB11 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "Images/Icon-Small.png"; sourceTree = "<group>"; };
+		7E37057C11CAC2FE00F5DB11 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "Images/Icon-Small@2x.png"; sourceTree = "<group>"; };
+		7E37057D11CAC2FE00F5DB11 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Images/Icon.png; sourceTree = "<group>"; };
+		7E37057E11CAC2FE00F5DB11 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Images/Icon@2x.png"; sourceTree = "<group>"; };
+		7E37057F11CAC2FE00F5DB11 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iTunesArtwork.png; path = Images/iTunesArtwork.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +121,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7E37048B11CA9EE900F5DB11 /* Images */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				3097D6870E392CCC00159D5D /* MainWindow.xib */,
 				3097D6940E392F8E00159D5D /* SongsView.xib */,
@@ -157,6 +168,18 @@
 				30B696AF0F852DAE009F5B22 /* CategoryCache.m */,
 			);
 			name = Application;
+			sourceTree = "<group>";
+		};
+		7E37048B11CA9EE900F5DB11 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7E37057B11CAC2FE00F5DB11 /* Icon-Small.png */,
+				7E37057C11CAC2FE00F5DB11 /* Icon-Small@2x.png */,
+				7E37057D11CAC2FE00F5DB11 /* Icon.png */,
+				7E37057E11CAC2FE00F5DB11 /* Icon@2x.png */,
+				7E37057F11CAC2FE00F5DB11 /* iTunesArtwork.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +235,11 @@
 				3097D6960E392F8E00159D5D /* SongsView.xib in Resources */,
 				303609D00E3950FB0005A5A0 /* SongDetailsView.xib in Resources */,
 				30F20C520EC3618100F74FAC /* Localizable.strings in Resources */,
+				7E37058011CAC2FE00F5DB11 /* Icon-Small.png in Resources */,
+				7E37058111CAC2FE00F5DB11 /* Icon-Small@2x.png in Resources */,
+				7E37058211CAC2FE00F5DB11 /* Icon.png in Resources */,
+				7E37058311CAC2FE00F5DB11 /* Icon@2x.png in Resources */,
+				7E37058411CAC2FE00F5DB11 /* iTunesArtwork.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +309,10 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Prefix.pch;
-				HEADER_SEARCH_PATHS = $SDKROOT/usr/include/libxml2;
+				HEADER_SEARCH_PATHS = (
+					"$SDKROOT,",
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = TopSongs;
 			};
@@ -294,7 +325,10 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Prefix.pch;
-				HEADER_SEARCH_PATHS = $SDKROOT/usr/include/libxml2;
+				HEADER_SEARCH_PATHS = (
+					"$SDKROOT,",
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = TopSongs;
 			};
@@ -308,9 +342,10 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.0;
+				SDKROOT = iphoneos4.0;
 			};
 			name = Debug;
 		};
@@ -322,8 +357,9 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.0;
+				SDKROOT = iphoneos4.0;
 			};
 			name = Release;
 		};

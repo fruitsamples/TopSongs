@@ -1,7 +1,7 @@
 /*
      File: iTunesRSSImporter.m
  Abstract: Downloads, parses, and imports the iTunes top songs RSS feed into Core Data.
-  Version: 1.2
+  Version: 1.3
  
  Disclaimer: IMPORTANT:  This Apple software is supplied to you by Apple
  Inc. ("Apple") in consideration of your agreement to the following
@@ -41,7 +41,7 @@
  STRICT LIABILITY OR OTHERWISE, EVEN IF APPLE HAS BEEN ADVISED OF THE
  POSSIBILITY OF SUCH DAMAGE.
  
- Copyright (C) 2010 Apple Inc. All Rights Reserved.
+ Copyright (C) 2011 Apple Inc. All Rights Reserved.
  
  */
 
@@ -213,12 +213,9 @@ static const NSUInteger kImportBatchSize = 20;
     parsingASong = NO;
     self.currentSong = nil;
     countForCurrentBatch++;
-    // Periodically purge the autorelease pool and save the context. The frequency of this action may need to be tuned according to the 
-    // size of the objects being parsed. The goal is to keep the autorelease pool from growing too large, but 
-    // taking this action too frequently would be wasteful and reduce performance.
+
     if (countForCurrentBatch == kImportBatchSize) {
-        [importPool release];
-        self.importPool = [[NSAutoreleasePool alloc] init];
+        
         NSError *saveError = nil;
         NSAssert1([insertionContext save:&saveError], @"Unhandled error saving managed object context in import thread: %@", [saveError localizedDescription]);
         countForCurrentBatch = 0;

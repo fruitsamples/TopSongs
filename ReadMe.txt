@@ -21,11 +21,11 @@ The easiest way to avoid the memory problem for large or potentially large data 
 ===========================================================================
 BUILD REQUIREMENTS
 
-iOS SDK 4.0
+iOS SDK 5.0
 
 RUNTIME REQUIREMENTS
 
-iOS 4.0
+iOS 4.0 or later
 
 ===========================================================================
 PACKAGING LIST
@@ -54,6 +54,8 @@ Managed object subclass for Category entity.
 ===========================================================================
 CHANGES FROM PREVIOUS VERSIONS
 
+1.3 Upgraded to iOS 5.0, fixed an autorelease pool management bug.
+
 1.2 Upgraded project to build with the iOS 4 SDK.
 
 1.1 Expanded ReadMe and added localization for SongsViewController.
@@ -61,4 +63,4 @@ CHANGES FROM PREVIOUS VERSIONS
 1.0 Initial version published.
 
 ===========================================================================
-Copyright (C) 2010 Apple Inc. All rights reserved.
+Copyright (C) 2010-2011 Apple Inc. All rights reserved.
